@@ -14,12 +14,13 @@ ALLOWED_EMAILS = [
 ]
 
 # -------------------------------
-# Header Section (solid color banner)
+# Header Section with Logo + Title
 # -------------------------------
 st.markdown(
     """
     <div style="background-color:#002B49;padding:60px 20px;border-radius:10px;margin-bottom:30px;
                 text-align:center;">
+        <img src="assets/logo-white-50.png" width="120" style="margin-bottom:20px;">
         <h1 style="color:white;font-family:sans-serif;font-size:50px;font-weight:bold;">
             YuShan Hub
         </h1>
