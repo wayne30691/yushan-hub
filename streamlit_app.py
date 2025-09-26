@@ -1,64 +1,60 @@
 import streamlit as st
 
-# -------------------------------
-# App Config
-# -------------------------------
 st.set_page_config(page_title="YuShan Hub", layout="wide")
 
-# -------------------------------
-# Whitelist of allowed emails
-# -------------------------------
+# --- Whitelist of allowed emails ---
 ALLOWED_EMAILS = [
     "wayne.wang1@pernod-ricard.com",
     # Add more emails here
 ]
 
-# -------------------------------
-# Load Pernod Ricard Logo (inline SVG)
-# -------------------------------
-with open("assets/pr_logo.svg", "r", encoding="utf-8") as f:
-    logo_svg = f.read()
+# --- Hero Banner (replace with your hosted image URL if needed) ---
+banner_url = "https://www.pernod-ricard.com/themes/custom/pernodricard_theme/images/hero-home.jpg"
 
-# -------------------------------
-# Header Section with Logo Centered
-# -------------------------------
 st.markdown(
     f"""
-    <div style="background-color:#002B49;padding:30px;border-radius:10px;margin-bottom:25px;
-                text-align:center;">
-        <div style="margin-bottom:15px;">{logo_svg}</div>
-        <h1 style="color:white;font-family:sans-serif;">YuShan Hub</h1>
-        <p style="color:#7AC9E0;font-size:18px;">
-            Pernod Ricard Taiwan • Your central access to dashboards and apps
-        </p>
+    <div style="position:relative;text-align:center;color:white;margin-bottom:30px;">
+        <img src="{banner_url}" style="width:100%;border-radius:10px;opacity:0.85;">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);">
+            <h1 style="font-size:48px;font-family:sans-serif;font-weight:bold;">
+                YuShan Hub
+            </h1>
+            <p style="font-size:20px;">Pernod Ricard Taiwan • Data & Insights Portal</p>
+        </div>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-# -------------------------------
-# Portal Section
-# -------------------------------
 st.markdown("### 🚀 Available Tools")
 
 col1, col2 = st.columns(2)
 
-# --- Power BI Card (no login) ---
+# --- Power BI (always accessible) ---
 with col1:
     st.markdown(
         """
-        <div style="background-color:#E8E2D6;padding:25px;border-radius:15px;text-align:center;cursor:pointer;"
+        <div style="background-color:#E8E2D6;padding:40px;border-radius:15px;text-align:center;cursor:pointer;"
              onclick="window.open('https://app.powerbi.com/', '_blank')">
-            <h3 style="color:#002B49;">📊 Power BI</h3>
+            <h2 style="color:#002B49;">📊 Power BI</h2>
             <p style="color:#333333;">Trusted performance dashboards</p>
         </div>
         """,
         unsafe_allow_html=True
     )
 
-# --- R Shiny Card (login required) ---
+# --- R Shiny (requires login) ---
 with col2:
-    st.markdown("### 📈 R Shiny Apps")
+    st.markdown(
+        """
+        <div style="background-color:#E8E2D6;padding:40px;border-radius:15px;text-align:center;">
+            <h2 style="color:#002B49;">📈 R Shiny Apps</h2>
+            <p style="color:#333333;">Interactive statistical apps (login required)</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     email = st.text_input("Enter your Pernod Ricard email to access R Shiny")
 
     if st.button("Login to R Shiny"):
