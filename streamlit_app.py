@@ -3,7 +3,7 @@ import streamlit as st
 # -------------------------------
 # App Config
 # -------------------------------
-st.set_page_config(page_title="Yushan Hub", layout="wide")
+st.set_page_config(page_title="Yushan Hub 2.0", layout="wide")
 
 # -------------------------------
 # Whitelist of allowed emails
@@ -14,13 +14,19 @@ ALLOWED_EMAILS = [
 ]
 
 # -------------------------------
-# Header Section with Pernod Ricard logo
+# Load Pernod Ricard Logo (inline SVG)
+# -------------------------------
+with open("assets/pr_logo.svg", "r", encoding="utf-8") as f:
+    logo_svg = f.read()
+
+# -------------------------------
+# Header Section with Logo Centered
 # -------------------------------
 st.markdown(
-    """
+    f"""
     <div style="background-color:#002B49;padding:30px;border-radius:10px;margin-bottom:25px;
                 text-align:center;">
-        <img src="https://raw.githubusercontent.com/<your-username>/<your-repo>/main/assets/pr_logo.svg" width="100" style="margin-bottom:15px;">
+        <div style="margin-bottom:15px;">{logo_svg}</div>
         <h1 style="color:white;font-family:sans-serif;">Yushan Hub 2.0</h1>
         <p style="color:#7AC9E0;font-size:18px;">
             Pernod Ricard Taiwan • Your central access to dashboards and apps
@@ -100,6 +106,5 @@ if st.button("Login"):
 
         if st.button("Logout"):
             st.experimental_rerun()
-
     else:
         st.error("❌ Access denied. You are not in the whitelist.")
