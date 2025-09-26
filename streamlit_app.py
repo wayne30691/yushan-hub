@@ -20,7 +20,7 @@ st.markdown(
     """
     <div style="background-color:#002B49;padding:30px;border-radius:10px;margin-bottom:25px;
                 text-align:center;">
-        <img src="assets/pr_logo.svg" width="100" style="margin-bottom:15px;">
+        <img src="https://raw.githubusercontent.com/<your-username>/<your-repo>/main/assets/pr_logo.svg" width="100" style="margin-bottom:15px;">
         <h1 style="color:white;font-family:sans-serif;">Yushan Hub 2.0</h1>
         <p style="color:#7AC9E0;font-size:18px;">
             Pernod Ricard Taiwan • Your central access to dashboards and apps
