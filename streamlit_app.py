@@ -10,7 +10,7 @@ st.set_page_config(page_title="YuShan Hub", layout="wide")
 # Whitelist of allowed emails
 # -------------------------------
 ALLOWED_EMAILS = [
-    "wayne.wang1@pernod-ricard.com",
+    "",
     # Add more emails here
 ]
 
