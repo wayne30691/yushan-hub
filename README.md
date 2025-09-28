@@ -26,14 +26,13 @@ Yushan Hub is a centralized data and reporting platform designed for PRT to stre
 
 Daily Net Sales Tracker 
 
-![](assets/dashboard-daily-sales-page1.png)
-![](assets/dashboard-daily-sales-page2.png)
+<img src="assets/dashboard-daily-sales-page1.png" width="400"/> <img src="assets/dashboard-daily-sales-page2.png" width="400"/>
 
 WS Trade Inventory
-![](assets/dashboard-inventory.png)
+<img src="assets/dashboard-inventory-page1.png" width="400"/> <img src="assets/dashboard-inventory-page2.png" width="400"/>
 
 Depletions Cockpit
-![](assets/dashboard-depletions.png)
+<img src="assets/dashboard-depletions-page1.png" width="400"/> <img src="assets/dashboard-depletions-page2.png" width="400"/>
 
 ## 📁 Project Structure
 
