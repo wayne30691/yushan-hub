@@ -36,6 +36,6 @@ Depletions Cockpit
 
 <img src="assets/dashboard-depletions-page1.png" width="400"/> <img src="assets/dashboard-depletions-page2.png" width="400"/>
 
-## 📁 Project Structure
+## 🧩 Project Structure
 
-See [docs/](docs/) for full documentation.
+<img src="assets/dashboard-structure.png" width="800"/>
