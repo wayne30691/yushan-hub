@@ -2,7 +2,7 @@
 
 Yushan Hub is a centralized data and reporting platform designed for PRT to streamline sales, inventory, and market performance monitoring. It is built on Power BI, supported by Snowflake, Python, Power Automate, and SharePoint integrations.
 
-<img src="assets/YushanHubHomepage.png"  width="800"/>
+<img src="assets/YushanHubHomePage.png"  width="800"/>
 
 ## 🧾 Features
 
