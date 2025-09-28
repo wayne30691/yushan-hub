@@ -4,25 +4,25 @@ Yushan Hub is a centralized data and reporting platform designed for PRT to stre
 
 <img src="assets/YushanHubHomePage.png"  width="800"/>
 
-## 🧾 Features
+## Features
 
 - Centralized dashboard access via SharePoint portal
 - Real-time refresh logic (daily / weekly) connected to Sonwflake, Salesforce, and SharePoint files
 - Strict access control (Pernod Ricard Global Data Governance Matrix Level 1+)
 - Dashboard coverage: Sell-in, Depletions, Sell-out, A&D, A&P, Inventory, Shipment, Shipment forecast
 
-## 🔁 Refresh & Automation Logic
+## Refresh & Automation Logic
 
 - **Scheduled Data Refresh**: Power BI dashboards are refreshed daily or weekly using Power BI Scheduled Refresh.
 - **Snapshot File Strategy**: Excel data sources are saved as snapshots to prevent disruptions from live editing and ensure consistent refresh.
 - **Trigger Notifications**: Selective workflows use SharePoint versioning or Power Automate to notify data updates.
 
-## 📊 Data Governance
+## Data Governance
 
 - Roles: Data Owner, Steward, Organizer
 - Control aligned with HQ Data guidelines and Code of Duty MOOC
 
-## 📷 Sample Dashboards
+## Sample Dashboards
 
 Daily Net Sales Tracker 
 
