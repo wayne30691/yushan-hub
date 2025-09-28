@@ -29,6 +29,7 @@ Daily Net Sales Tracker
 <img src="assets/dashboard-daily-sales-page1.png" width="400"/> <img src="assets/dashboard-daily-sales-page2.png" width="400"/>
 
 WS Trade Inventory
+
 <img src="assets/dashboard-inventory-page1.png" width="400"/> <img src="assets/dashboard-inventory-page2.png" width="400"/>
 
 Depletions Cockpit
