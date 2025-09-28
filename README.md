@@ -33,6 +33,7 @@ WS Trade Inventory
 <img src="assets/dashboard-inventory-page1.png" width="400"/> <img src="assets/dashboard-inventory-page2.png" width="400"/>
 
 Depletions Cockpit
+
 <img src="assets/dashboard-depletions-page1.png" width="400"/> <img src="assets/dashboard-depletions-page2.png" width="400"/>
 
 ## 📁 Project Structure
